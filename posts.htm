@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Эвклид" />
+    <meta name="author" content="Эвклид" />
+
+    <title>Эвклид Club | Бейне сабақтар</title>
+
+    <link rel="stylesheet" href="public/front/css/bootstrap.css"  "http://Эвклид.club/public/front/css/bootstrap.css">
+    <link rel="stylesheet" href="public/front/css/font-icons/entypo/css/entypo.css"  "http://Эвклид.club/public/front/css/font-icons/entypo/css/entypo.css">
+        <link rel="stylesheet" href="public/front/css/neon.css"  "http://Эвклид.club/public/front/css/neon.css">
+    <link rel="stylesheet" href="public/stylesheets/toast.css"  "http://Эвклид.club/public/stylesheets/toast.css">
+    <link rel="stylesheet" href="public/front/css/custom.css"  "http://Эвклид.club/public/front/css/custom.css">
+    
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.png"  "http://Эвклид.club/public/images/favicon.png">
+
+    <script src="public/front/js/jquery-1.11.0.min.js"  "http://Эвклид.club/public/front/js/jquery-1.11.0.min.js"></script>
+    <script>$.noConflict();</script>
+
+    <!--[if lt IE 9]>
+    <script src="public/front/js/ie8-responsive-file-warning.js"  "http://Эвклид.club/public/front/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"  "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"  "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body onload="jQuery('#portfolio-items').isotope('reLayout')" oncontextmenu="return false;">
+
+<div class="wrap">
+
+    <!-- Logo and Navigation -->
+    <div class="site-header-container container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <header class="site-header">
+
+                    <section class="site-logo">
+
+                        <a href="index.htm"   class="logo">
+                            <h1 class="heading_logo_black">Эвклид</h1>
+                        </a>
+
+                    </section>
+
+                    <nav class="site-nav">
+
+                        <ul class="main-menu hidden-xs" id="main-menu">
+                            <li class="">
+                                <a href="index.htm"  "http://Эвклид.club/">
+                                    <span>Басты бет</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="posts.htm"  "http://Эвклид.club/posts">
+                                    <span>Бейне сабақтар</span>
+                                </a>
+                            </li>
+                            <li>
+                            <li class="">
+                                <a href="application/about.htm"  "http://Эвклид.club/application/about">
+                                    <span>Біз туралы</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="mcontact.html">
+                                    <span>Бізбен байланыс</span>
+                                </a>
+                            </li> -->
+                            <!-- <li class="search">
+                                <a href="#">
+                                    <i class="entypo-search"></i>
+                                </a>
+
+                                <form method="get" class="search-form" action="" enctype="application/x-www-form-urlencoded">
+                                    <input type="text" class="form-control" name="q" placeholder="Type to search..." />
+                                </form>
+                            </li> -->
+                                                                            <li>
+                                <a href="application/login.htm"  "http://Эвклид.club/application/login">
+                                    <div class="btn btn-secondary">Кіру</div>
+                                </a>
+                            </li>
+                                                </ul>
+
+
+                        <div class="visible-xs">
+
+                            <a href="#" class="menu-trigger">
+                                <i class="entypo-menu"></i>
+                            </a>
+
+                        </div>
+                    </nav>
+
+                </header>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Main Slider -->
+    
+
+
+
+<!-- Breadcrumb -->
+<section class="breadcrumb">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-7">
+
+                <h1>Бейне сабақтар</h1>
+
+            </div>
+
+            <div class="col-sm-5">
+
+                <!-- Category Filter -->
+                <div class="btn-group alt-select-field" id="category-filter">
+
+                    <button type="button" class="btn btn-label" data-toggle="dropdown">Барлық тақырыптар</button>
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu">
+
+                                                    <li>
+                                <a href="#" data-filter="2">Тригонометрия</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="4">Логарифм</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="1">Геометрия</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="3">Сынақ кітапшасы</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="5">Функция</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="6">Теңсіздіктер</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="7">Әртүрлі</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="8">Прогрессия</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="9">Мәселе есептер</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="10">Туынды</a>
+                            </li>
+                                                    <li>
+                                <a href="#" data-filter="11">Алғашқы функция</a>
+                            </li>
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="portfolio-container">
+
+    <div class="container">
+
+        <div class="row" id="portfolio-items">
+
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-1" data-sort-by="1">
+
+                        <div class="trap ribbon-wrap ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=1" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/1.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(1)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>206</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-3">
+
+                    <div class="portfolio-item" id="post-2" data-sort-by="2">
+
+                        <div class="trap ribbon-wrap ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=2" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/2.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(2)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>185</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Сынақ кітапшасы</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-7">
+
+                    <div class="portfolio-item" id="post-3" data-sort-by="3">
+
+                        <div class="trap ribbon-wrap ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=3" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/3.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(3)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>201</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Әртүрлі</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-4">
+
+                    <div class="portfolio-item" id="post-4" data-sort-by="4">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=4" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/4.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(4)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>144</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Логарифм</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-4">
+
+                    <div class="portfolio-item" id="post-5" data-sort-by="5">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=5" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/5.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(5)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>124</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Логарифм</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-6" data-sort-by="6">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=6" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/6.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(6)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>143</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-7" data-sort-by="7">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=7" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/7.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(7)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>109</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-8" data-sort-by="8">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=8" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/8.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(8)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>97</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-4">
+
+                    <div class="portfolio-item" id="post-9" data-sort-by="9">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=9" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/9.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(9)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>96</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Логарифм</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-4">
+
+                    <div class="portfolio-item" id="post-10" data-sort-by="10">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=10" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/10.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(10)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>88</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Логарифм</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-4">
+
+                    <div class="portfolio-item" id="post-11" data-sort-by="11">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=11" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/11.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(11)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>86</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Логарифм</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-5">
+
+                    <div class="portfolio-item" id="post-12" data-sort-by="12">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=12" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/12.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(12)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>98</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-5">
+
+                    <div class="portfolio-item" id="post-13" data-sort-by="13">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=13" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/13.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(13)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>92</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-6">
+
+                    <div class="portfolio-item" id="post-14" data-sort-by="14">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=14" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/14.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(14)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>72</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Теңсіздіктер</a>
+                        </div>
+                    </div>
+
+                </div>
+                           <!-- <div class="item col-sm-4 col-xs-6 filter-6">
+
+                    <div class="portfolio-item" id="post-15" data-sort-by="15">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=15" class="image">
+                            <img src="public/images/posts/thumb/2.png"  "http://Эвклид.club/public/images/posts/thumb/15.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(15)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>75</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Теңсіздіктер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-16" data-sort-by="16">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=16" class="image">
+                            <img src="public/images/posts/thumb/16.png"  "http://Эвклид.club/public/images/posts/thumb/16.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(16)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>72</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-8">
+
+                    <div class="portfolio-item" id="post-17" data-sort-by="17">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=17" class="image">
+                            <img src="public/images/posts/thumb/17.png"  "http://Эвклид.club/public/images/posts/thumb/17.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(17)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>63</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Прогрессия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-8">
+
+                    <div class="portfolio-item" id="post-18" data-sort-by="18">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=18" class="image">
+                            <img src="public/images/posts/thumb/18.png"  "http://Эвклид.club/public/images/posts/thumb/18.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(18)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>64</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Прогрессия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-19" data-sort-by="19">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=19" class="image">
+                            <img src="public/images/posts/thumb/19.png"  "http://Эвклид.club/public/images/posts/thumb/19.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(19)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>73</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-20" data-sort-by="20">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=20" class="image">
+                            <img src="public/images/posts/thumb/20.png"  "http://Эвклид.club/public/images/posts/thumb/20.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(20)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>86</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-21" data-sort-by="21">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=21" class="image">
+                            <img src="public/images/posts/thumb/21.png"  "http://Эвклид.club/public/images/posts/thumb/21.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(21)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>75</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-22" data-sort-by="22">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=22" class="image">
+                            <img src="public/images/posts/thumb/22.png"  "http://Эвклид.club/public/images/posts/thumb/22.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(22)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>71</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-23" data-sort-by="23">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=23" class="image">
+                            <img src="public/images/posts/thumb/23.png"  "http://Эвклид.club/public/images/posts/thumb/23.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(23)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>70</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-24" data-sort-by="24">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=24" class="image">
+                            <img src="public/images/posts/thumb/24.png"  "http://Эвклид.club/public/images/posts/thumb/24.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(24)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>70</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-25" data-sort-by="25">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=25" class="image">
+                            <img src="public/images/posts/thumb/25.png"  "http://Эвклид.club/public/images/posts/thumb/25.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(25)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>67</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-26" data-sort-by="26">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=26" class="image">
+                            <img src="public/images/posts/thumb/26.png"  "http://Эвклид.club/public/images/posts/thumb/26.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(26)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>76</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-6">
+
+                    <div class="portfolio-item" id="post-27" data-sort-by="27">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=27" class="image">
+                            <img src="public/images/posts/thumb/27.png"  "http://Эвклид.club/public/images/posts/thumb/27.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(27)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>58</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Теңсіздіктер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-28" data-sort-by="28">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=28" class="image">
+                            <img src="public/images/posts/thumb/28.png"  "http://Эвклид.club/public/images/posts/thumb/28.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(28)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>63</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-29" data-sort-by="29">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=29" class="image">
+                            <img src="public/images/posts/thumb/29.png"  "http://Эвклид.club/public/images/posts/thumb/29.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(29)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>61</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-30" data-sort-by="30">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=30" class="image">
+                            <img src="public/images/posts/thumb/30.png"  "http://Эвклид.club/public/images/posts/thumb/30.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(30)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>58</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-31" data-sort-by="31">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=31" class="image">
+                            <img src="public/images/posts/thumb/31.png"  "http://Эвклид.club/public/images/posts/thumb/31.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(31)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>47</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-32" data-sort-by="32">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=32" class="image">
+                            <img src="public/images/posts/thumb/32.png"  "http://Эвклид.club/public/images/posts/thumb/32.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(32)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>47</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-33" data-sort-by="33">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=33" class="image">
+                            <img src="public/images/posts/thumb/33.png"  "http://Эвклид.club/public/images/posts/thumb/33.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(33)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>53</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-34" data-sort-by="34">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=34" class="image">
+                            <img src="public/images/posts/thumb/34.png"  "http://Эвклид.club/public/images/posts/thumb/34.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(34)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>57</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-9">
+
+                    <div class="portfolio-item" id="post-35" data-sort-by="35">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=35" class="image">
+                            <img src="public/images/posts/thumb/35.png"  "http://Эвклид.club/public/images/posts/thumb/35.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(35)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>54</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Мәселе есептер</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-11">
+
+                    <div class="portfolio-item" id="post-36" data-sort-by="36">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=36" class="image">
+                            <img src="public/images/posts/thumb/36.png"  "http://Эвклид.club/public/images/posts/thumb/36.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(36)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>61</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Алғашқы функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-11">
+
+                    <div class="portfolio-item" id="post-37" data-sort-by="37">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=37" class="image">
+                            <img src="public/images/posts/thumb/37.png"  "http://Эвклид.club/public/images/posts/thumb/37.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(37)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>61</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Алғашқы функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-38" data-sort-by="38">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=38" class="image">
+                            <img src="public/images/posts/thumb/38.png"  "http://Эвклид.club/public/images/posts/thumb/38.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(38)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>56</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-39" data-sort-by="39">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=39" class="image">
+                            <img src="public/images/posts/thumb/39.png"  "http://Эвклид.club/public/images/posts/thumb/39.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(39)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>55</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-40" data-sort-by="40">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=40" class="image">
+                            <img src="public/images/posts/thumb/40.png"  "http://Эвклид.club/public/images/posts/thumb/40.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(40)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>49</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-41" data-sort-by="41">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=41" class="image">
+                            <img src="public/images/posts/thumb/41.png"  "http://Эвклид.club/public/images/posts/thumb/41.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(41)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>50</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-42" data-sort-by="42">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=42" class="image">
+                            <img src="public/images/posts/thumb/42.png"  "http://Эвклид.club/public/images/posts/thumb/42.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(42)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>50</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-2">
+
+                    <div class="portfolio-item" id="post-43" data-sort-by="43">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=43" class="image">
+                            <img src="public/images/posts/thumb/43.png"  "http://Эвклид.club/public/images/posts/thumb/43.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(43)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>47</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Тригонометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-11">
+
+                    <div class="portfolio-item" id="post-44" data-sort-by="44">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=44" class="image">
+                            <img src="public/images/posts/thumb/44.png"  "http://Эвклид.club/public/images/posts/thumb/44.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(44)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>57</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Алғашқы функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-10">
+
+                    <div class="portfolio-item" id="post-45" data-sort-by="45">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=45" class="image">
+                            <img src="public/images/posts/thumb/45.png"  "http://Эвклид.club/public/images/posts/thumb/45.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(45)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>60</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Туынды</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-10">
+
+                    <div class="portfolio-item" id="post-46" data-sort-by="46">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=46" class="image">
+                            <img src="public/images/posts/thumb/46.png"  "http://Эвклид.club/public/images/posts/thumb/46.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(46)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>58</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Туынды</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-10">
+
+                    <div class="portfolio-item" id="post-47" data-sort-by="47">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=47" class="image">
+                            <img src="public/images/posts/thumb/47.png"  "http://Эвклид.club/public/images/posts/thumb/47.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(47)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>54</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Туынды</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-3">
+
+                    <div class="portfolio-item" id="post-48" data-sort-by="48">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=48" class="image">
+                            <img src="public/images/posts/thumb/48.png"  "http://Эвклид.club/public/images/posts/thumb/48.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(48)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>45</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Сынақ кітапшасы</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-3">
+
+                    <div class="portfolio-item" id="post-49" data-sort-by="49">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=49" class="image">
+                            <img src="public/images/posts/thumb/49.png"  "http://Эвклид.club/public/images/posts/thumb/49.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(49)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>40</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Сынақ кітапшасы</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-3">
+
+                    <div class="portfolio-item" id="post-50" data-sort-by="50">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=50" class="image">
+                            <img src="public/images/posts/thumb/50.png"  "http://Эвклид.club/public/images/posts/thumb/50.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(50)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>45</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Сынақ кітапшасы</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-5">
+
+                    <div class="portfolio-item" id="post-51" data-sort-by="51">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=51" class="image">
+                            <img src="public/images/posts/thumb/51.png"  "http://Эвклид.club/public/images/posts/thumb/51.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(51)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>73</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Функция</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-8">
+
+                    <div class="portfolio-item" id="post-52" data-sort-by="52">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=52" class="image">
+                            <img src="public/images/posts/thumb/52.png"  "http://Эвклид.club/public/images/posts/thumb/52.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(52)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>54</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Прогрессия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-8">
+
+                    <div class="portfolio-item" id="post-53" data-sort-by="53">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=53" class="image">
+                            <img src="public/images/posts/thumb/53.png"  "http://Эвклид.club/public/images/posts/thumb/53.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(53)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>45</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Прогрессия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-54" data-sort-by="54">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=54" class="image">
+                            <img src="public/images/posts/thumb/54.png"  "http://Эвклид.club/public/images/posts/thumb/54.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(54)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>55</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-55" data-sort-by="55">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=55" class="image">
+                            <img src="public/images/posts/thumb/55.png"  "http://Эвклид.club/public/images/posts/thumb/55.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(55)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>39</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-56" data-sort-by="56">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=56" class="image">
+                            <img src="public/images/posts/thumb/56.png"  "http://Эвклид.club/public/images/posts/thumb/56.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(56)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>39</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-57" data-sort-by="57">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=57" class="image">
+                            <img src="public/images/posts/thumb/57.png"  "http://Эвклид.club/public/images/posts/thumb/57.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(57)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>40</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-58" data-sort-by="58">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=58" class="image">
+                            <img src="public/images/posts/thumb/58.png"  "http://Эвклид.club/public/images/posts/thumb/58.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(58)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>35</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-59" data-sort-by="59">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=59" class="image">
+                            <img src="public/images/posts/thumb/59.png"  "http://Эвклид.club/public/images/posts/thumb/59.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(59)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>37</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-60" data-sort-by="60">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=60" class="image">
+                            <img src="public/images/posts/thumb/60.png"  "http://Эвклид.club/public/images/posts/thumb/60.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(60)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>33</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-61" data-sort-by="61">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=61" class="image">
+                            <img src="public/images/posts/thumb/61.png"  "http://Эвклид.club/public/images/posts/thumb/61.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(61)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>36</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-62" data-sort-by="62">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=62" class="image">
+                            <img src="public/images/posts/thumb/62.png"  "http://Эвклид.club/public/images/posts/thumb/62.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(62)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>38</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-63" data-sort-by="63">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=63" class="image">
+                            <img src="public/images/posts/thumb/63.png"  "http://Эвклид.club/public/images/posts/thumb/63.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(63)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>35</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-64" data-sort-by="64">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=64" class="image">
+                            <img src="public/images/posts/thumb/64.png"  "http://Эвклид.club/public/images/posts/thumb/64.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(64)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>37</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-65" data-sort-by="65">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=65" class="image">
+                            <img src="public/images/posts/thumb/65.png"  "http://Эвклид.club/public/images/posts/thumb/65.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(65)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>37</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-66" data-sort-by="66">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=66" class="image">
+                            <img src="public/images/posts/thumb/66.png"  "http://Эвклид.club/public/images/posts/thumb/66.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(66)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>36</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-67" data-sort-by="67">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=67" class="image">
+                            <img src="public/images/posts/thumb/67.png"  "http://Эвклид.club/public/images/posts/thumb/67.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(67)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>38</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-68" data-sort-by="68">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=68" class="image">
+                            <img src="public/images/posts/thumb/68.png"  "http://Эвклид.club/public/images/posts/thumb/68.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(68)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>37</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-69" data-sort-by="69">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=69" class="image">
+                            <img src="public/images/posts/thumb/69.png"  "http://Эвклид.club/public/images/posts/thumb/69.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(69)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>29</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-70" data-sort-by="70">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=70" class="image">
+                            <img src="public/images/posts/thumb/70.png"  "http://Эвклид.club/public/images/posts/thumb/70.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(70)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>35</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-71" data-sort-by="71">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=71" class="image">
+                            <img src="public/images/posts/thumb/71.png"  "http://Эвклид.club/public/images/posts/thumb/71.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(71)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>38</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="item col-sm-4 col-xs-6 filter-1">
+
+                    <div class="portfolio-item" id="post-72" data-sort-by="72">
+
+                        <div class="trap ribbon-wrap  invisible ">
+                            <div class="trap-ribbon">
+                                <a href="#">ТЕГІН</a>
+                            </div>
+                        </div>
+
+                        <a href="application/login.htm"  "http://Эвклид.club/lessons/lesson?idx=72" class="image">
+                            <img src="public/images/posts/thumb/72.png"  "http://Эвклид.club/public/images/posts/thumb/72.png" class="img-rounded" />
+                            
+                        </a>
+
+                        <h4>
+                                                            <a href="javascript: likeIt(72)" class="like">
+                                    <i class="entypo-thumbs-up"></i><span>38</span>
+                                </a>
+                                                                                                            </h4>
+
+                        <div class="categories">
+                            <a href="javascript: void(0)">Геометрия</a>
+                        </div>
+                    </div>
+
+                </div>-->
+            
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="text-center">
+
+                    <ul class="pagination">
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function($)
+    {
+        var $portfolio_items = $("#portfolio-items")
+//        .isotope({
+//            getSortData: {
+//                id: '.portfolio-item[id]'
+//            },
+//            // sort by color then number
+//            sortBy: [ 'id' ]
+//        });
+        var $category_filter = $("#category-filter");
+
+        $portfolio_items.isotope({
+            itemSelector: '.item',
+            columnWidth: 1/4,
+            sortBy: 'id',
+            sortAscending: true
+        });
+
+        $category_filter.on('change', function(ev, o)
+        {
+            var filter = o.el.data('filter');
+
+            console.log(o);
+            $portfolio_items.isotope({
+                filter: o.isDefault ? '.item' : '.filter-' + filter
+            });
+        });
+
+        $(window).on('neon.resize', function()
+        {
+            $portfolio_items.isotope('reLayout');
+        });
+
+        $portfolio_items.isotope('reLayout');
+    });
+
+    function likeIt(post) {
+                            toastr.info('Бейне сабақты ұнату үшін сайтқа кіру қажет.');
+            }
+
+</script>
+    <!-- Footer Widgets -->
+    <section class="footer-widgets">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <a href="#" class="logo">
+                        <h1 class="heading_logo_black">Эвклид</h1>
+                    </a>
+
+                    <p>
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-sm-6 text-right">
+
+                    <h5>Бізбен байланыс</h5>
+
+                    <p>
+                        Activ (WhatsApp): +7 (775) 360 - 3673 <br/>
+                        Tele2: +7 (707) 325 - 6065 <br/>
+                       
+                        Тех. қолдау: euclidkursy@gmail.com<br/>
+                        <a href="https://vk.com/ybt_2016">vk.com/ybt_2016</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    &copy; 2015 - Эвклид Центр. All Rights Reserved.
+                </div>
+
+                <div class="col-sm-6">
+
+                    <ul class="social-networks text-right">
+                                                                                                                                                                                                                                <li>
+                            <a href="https://vk.com/ybt_2016">
+                                <i class="entypo-vkontakte"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+
+
+
+
+<!-- Bottom scripts (common) -->
+<script src="public/front/js/gsap/main-gsap.js"  "http://Эвклид.club/public/front/js/gsap/main-gsap.js"></script>
+<script src="public/front/js/bootstrap.js"  "http://Эвклид.club/public/front/js/bootstrap.js"></script>
+<script src="public/front/js/joinable.js"  "http://Эвклид.club/public/front/js/joinable.js"></script>
+<script src="public/front/js/resizeable.js"  "http://Эвклид.club/public/front/js/resizeable.js"></script>
+<script src="public/front/js/neon-slider.js"  "http://Эвклид.club/public/front/js/neon-slider.js"></script>
+<script src="public/javascripts/toastr.js"  "http://Эвклид.club/public/javascripts/toastr.js"></script>
+
+<!-- JavaScripts initializations and stuff -->
+<script src="public/front/js/neon-custom.js"  "http://Эвклид.club/public/front/js/neon-custom.js"></script>
+<script src="public/front/js/isotope/jquery.isotope.min.js"  "http://Эвклид.club/public/front/js/isotope/jquery.isotope.min.js"></script>
+
+</body>
+</html>
