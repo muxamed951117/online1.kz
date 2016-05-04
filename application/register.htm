@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Эвклид Registration" />
+    <meta name="author" content="Nurlan Rakhimzhanov" />
+
+    <title>| Тіркелу</title>
+
+	<link rel="stylesheet" href="../public/javascripts/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" tppabs="http://matemagia.club/public/javascripts/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="../public/stylesheets/font-icons/entypo/css/entypo.css" tppabs="http://matemagia.club/public/stylesheets/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="../../fonts.googleapis.com/css-family=Montserrat-900,Noto+Sans-400,700,400italic.css" tppabs="http://fonts.googleapis.com/css?family=Montserrat:900,Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="../public/stylesheets/bootstrap.css" tppabs="http://matemagia.club/public/stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="../public/stylesheets/neon-core.css" tppabs="http://matemagia.club/public/stylesheets/neon-core.css">
+	<link rel="stylesheet" href="../public/stylesheets/neon-theme.css" tppabs="http://matemagia.club/public/stylesheets/neon-theme.css">
+	<link rel="stylesheet" href="../public/stylesheets/neon-forms.css" tppabs="http://matemagia.club/public/stylesheets/neon-forms.css">
+	<link rel="stylesheet" href="../public/stylesheets/custom.css" tppabs="http://matemagia.club/public/stylesheets/custom.css">
+
+	<script src="../public/javascripts/jquery-1.11.0.min.js" tppabs="http://matemagia.club/public/javascripts/jquery-1.11.0.min.js"></script>
+	<script>$.noConflict();</script>
+
+	<!--[if lt IE 9]>
+		<script src="../public/javascripts/ie8-responsive-file-warning.js" tppabs="http://matemagia.club/public/javascripts/ie8-responsive-file-warning.js"></script>
+	<![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="../../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" tppabs="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="../../oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" tppabs="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body class="page-body login-page login-form-fall" data-url="http://neon.dev">
+
+
+<!-- This is needed when you send requests via Ajax -->
+<script type="text/javascript">
+var baseurl = '';
+</script>
+	
+<div class="login-container">
+	
+	<div class="login-header login-caret">
+		
+		<div class="login-content">
+			
+			<a href="../index.htm" tppabs="http://matemagia.club/" class="logo">
+				<h1 class="heading_logo_white">Эвклид</h1>
+			</a>
+			
+			<p class="description">Бізге тіркеліңіз, тегін әрі көп уақыт алмайды!</p>
+			
+			<!-- progress bar indicator -->
+			<div class="login-progressbar-indicator">
+				<h3>43%</h3>
+				<span>logging in...</span>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="login-progressbar">
+		<div></div>
+	</div>
+	
+	<div class="login-form">
+		
+		<div class="login-content">
+			
+			<form method="post" action="http://matemagia.club/application/signup" role="form" id="form_register">
+				
+				<div class="form-register-success">
+					<i class="entypo-check"></i>
+					<h3>Тіркеру сәтті аяқталды.</h3>
+					<p>Біз сіздің электронды поштаңызға(email-ге) растау сілтемесін жібердік.</p>
+				</div>
+
+                <div id="user-name-error" class="form-login-error">
+                    <h3>Тексеру қатесі</h3>
+                    <p><strong>Логин</strong> бос емес.</p>
+                </div>
+
+                <div id="email-error" class="form-login-error">
+                    <h3>Тексеру қатесі</h3>
+                    <p>Бұл <strong>электронды пошта</strong>(email) әлдеқашан бізде тіркелген.</p>
+                </div>
+
+                <div id="unknown-error" class="form-login-error">
+                    <h3>Белгісіз қате</h3>
+                    <p>Тіркелу кезінде қате шықты, өтініш, кейіндеу қайта тексеріп көріңіз.</p>
+                </div>
+
+                <div class="form-steps">
+					
+					<div class="step current" id="step-1">
+					
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-user"></i>
+								</div>
+								
+								<input type="text" class="form-control" name="user.fullname" id="fullname" placeholder="Аты-жөні" autocomplete="off" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-phone"></i>
+								</div>
+								
+								<input type="text" class="form-control" name="user.phone" id="phone" placeholder="Телефон" data-mask="phone" autocomplete="off" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-calendar"></i>
+								</div>
+								
+								<input type="text" class="form-control" name="user.birthday" id="birthday" placeholder="Туған куніңіз (КК.АА.ЖЖЖЖ)" data-mask="date" autocomplete="off" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<button type="button" data-step="step-2" class="btn btn-primary btn-block btn-login">
+								<i class="entypo-right-open-mini"></i>
+								Келесі қадам
+							</button>
+						</div>
+						
+						<div class="form-group">
+							Алғашқы қадам
+						</div>
+					
+					</div>
+					
+					<div class="step" id="step-2">
+					
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-user-add"></i>
+								</div>
+								
+								<input type="text" class="form-control" name="user.username" id="username" placeholder="Логин" data-mask="[a-zA-Z0-9\.]+" data-is-regex="true" autocomplete="off" />
+							</div>
+						</div>
+					
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-mail"></i>
+								</div>
+								
+								<input type="text" class="form-control" name="user.email" id="email" data-mask="email" placeholder="E-mail" autocomplete="off" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="entypo-lock"></i>
+								</div>
+								
+								<input type="password" class="form-control" name="user.password" id="password" placeholder="Пароль" autocomplete="off" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<button type="submit" class="btn btn-success btn-block btn-login">
+								<i class="entypo-right-open-mini"></i>
+								Тіркелуді аяқтау
+							</button>
+						</div>
+						
+						<div class="form-group">
+							Соңғы қадам
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</form>
+			
+			
+			<div class="login-bottom-links">
+
+                <a href="login.htm" tppabs="http://matemagia.club/application/login" class="link">
+                    <i class="entypo-lock"></i>
+                    Кіру бетіне қайту
+                </a>
+				
+				<br />
+
+                <a href="#">&copy; 2015</a>  - <a href="../index.htm" tppabs="http://matemagia.club/">Эвклид. All Rights Reserved.</a>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+	<!-- Bottom scripts (common) -->
+	<script src="../public/javascripts/gsap/main-gsap.js" tppabs="http://matemagia.club/public/javascripts/gsap/main-gsap.js"></script>
+	<script src="../public/javascripts/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" tppabs="http://matemagia.club/public/javascripts/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="../public/javascripts/bootstrap.js" tppabs="http://matemagia.club/public/javascripts/bootstrap.js"></script>
+	<script src="../public/javascripts/joinable.js" tppabs="http://matemagia.club/public/javascripts/joinable.js"></script>
+	<script src="../public/javascripts/resizeable.js" tppabs="http://matemagia.club/public/javascripts/resizeable.js"></script>
+	<script src="../public/javascripts/neon-api.js" tppabs="http://matemagia.club/public/javascripts/neon-api.js"></script>
+	<script src="../public/javascripts/jquery.validate.min.js" tppabs="http://matemagia.club/public/javascripts/jquery.validate.min.js"></script>
+	<script src="../public/javascripts/neon-register.js" tppabs="http://matemagia.club/public/javascripts/neon-register.js"></script>
+	<script src="../public/javascripts/jquery.inputmask.bundle.min.js" tppabs="http://matemagia.club/public/javascripts/jquery.inputmask.bundle.min.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="../public/javascripts/neon-custom.js" tppabs="http://matemagia.club/public/javascripts/neon-custom.js"></script>
+
+</body>
+</html>

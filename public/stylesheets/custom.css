@@ -1,0 +1,43 @@
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.space5-after:after {
+    content: "\00a0";
+}
+
+.space5-before:before {
+    content: "\00a0";
+}
+
+.heading_logo_black {
+    display:inline-block;
+    margin-top:10px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 0;
+    text-transform: uppercase;
+
+    color: rgb(32, 32, 65);
+}
+
+.heading_logo_white {
+    display:inline-block;
+    margin-top:10px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 0;
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
+}
